@@ -12,4 +12,3 @@ build/
 *.class
 .gradle/*
 local.properties
-gradle.properties

@@ -1,7 +1,5 @@
 package com.assignment.programming.data;
 
-import android.media.MediaScannerConnection;
-import android.net.Uri;
 import android.os.Build;
 import android.os.Environment;
 import android.text.TextUtils;
