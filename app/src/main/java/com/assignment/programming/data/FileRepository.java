@@ -129,6 +129,7 @@ public final class FileRepository {
         return file.lastModified();
     }
 
+    @WorkerThread
     @Nullable
     public FileModel saveResultsToFile() {
         final List<FileModel> fileList = getFileList();

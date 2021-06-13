@@ -45,11 +45,6 @@ dependencies {
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxAndroidVersion"
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
 
-    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
-    implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.3.1'
-    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.3.1'
-
     testImplementation "junit:junit:$rootProject.junitVersion"
     androidTestImplementation "androidx.test.ext:junit:$rootProject.androidXJunitVersion"
     androidTestImplementation "androidx.test.espresso:espresso-core:$rootProject.espressoVersion"
