@@ -1,0 +1,15 @@
+.idea/
+IDEA/
+target/
+gen/
+gen-external-apklibs/
+*.iml
+ajcore*.txt
+hs_err_pid*.log
+checkstyle-cache
+.DS_Store
+build/
+*.class
+.gradle/*
+local.properties
+gradle.properties

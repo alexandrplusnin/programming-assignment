@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Programming Assignment</string>
+    <string name="programming_assignment_matches_found">Matches found: %d</string>
+    <string name="programming_assignment_action_search">Search</string>
+    <string name="programming_assignment_sort_by_name">Sort by name</string>
+    <string name="programming_assignment_sort_by_date">Sort by date</string>
+    <string name="programming_assignment_sort_by_extension">Sort by extension</string>
+    <string name="programming_assignment_file_item_name">Name</string>
+    <string name="programming_assignment_file_item_path">Path</string>
+    <string name="programming_assignment_file_item_size">Size</string>
+    <string name="programming_assignment_file_item_date_created">Created</string>
+    <string name="programming_assignment_file_item_date_modified">Modified</string>
+    <string name="programming_assignment_channel_name">Notifications</string>
+    <string name="programming_assignment_save_to_file">Save to file</string>
+    <string name="programming_assignment_result_file">Result file</string>
+</resources>

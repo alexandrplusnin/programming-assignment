@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="viewModel"
+            type="com.assignment.programming.ui.file_item.FileItemViewModel" />
+
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/list_item_margin"
+        android:orientation="vertical"
+        tools:context=".ui.file_item.FileItemFragment">
+
+        <TextView
+            android:id="@+id/file_item_name_label"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:text="@string/programming_assignment_file_item_name" />
+
+        <TextView
+            android:id="@+id/file_item_name"
+            android:text="@{viewModel.name}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="File name" />
+
+        <TextView
+            android:id="@+id/file_item_path_label"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:text="@string/programming_assignment_file_item_path" />
+
+        <TextView
+            android:id="@+id/file_item_path"
+            android:text="@{viewModel.path}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="File path" />
+
+        <TextView
+            android:id="@+id/file_item_size_label"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:text="@string/programming_assignment_file_item_size" />
+
+        <TextView
+            android:id="@+id/file_item_size"
+            android:text="@{viewModel.size}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="File size" />
+
+        <TextView
+            android:id="@+id/file_item_date_created_label"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:text="@string/programming_assignment_file_item_date_created" />
+
+        <TextView
+            android:id="@+id/file_item_date_created"
+            android:text="@{viewModel.created}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="File creation date" />
+
+        <TextView
+            android:id="@+id/file_item_date_modified_label"
+            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?textAppearanceCaption"
+            android:text="@string/programming_assignment_file_item_date_modified" />
+
+        <TextView
+            android:id="@+id/file_item_date_modified"
+            android:text="@{viewModel.lastModified}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="File modification date" />
+
+        <ImageView
+            android:id="@+id/file_item_image_preview"
+            app:filePath="@{viewModel.imagePath}"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</layout>
