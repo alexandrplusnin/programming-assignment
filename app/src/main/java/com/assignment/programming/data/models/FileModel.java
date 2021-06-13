@@ -1,4 +1,4 @@
-package com.assignment.programming.data;
+package com.assignment.programming.data.models;
 
 import androidx.annotation.NonNull;
 

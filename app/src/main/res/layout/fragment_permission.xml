@@ -9,12 +9,12 @@
 
     <TextView
         android:id="@+id/permission_header"
-        android:paddingStart="32dp"
-        android:paddingEnd="32dp"
+        android:paddingStart="@dimen/double_margin"
+        android:paddingEnd="@dimen/double_margin"
         android:textAppearance="?textAppearanceHeadline5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="All files access is required"
+        android:text="@string/programming_assignment_all_files_access_is_required"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,23 +22,23 @@
 
     <TextView
         android:id="@+id/permission_message"
-        android:paddingStart="32dp"
-        android:paddingEnd="32dp"
+        android:paddingStart="@dimen/double_margin"
+        android:paddingEnd="@dimen/double_margin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Application needs all files access in order to find and display paths/names of all files on the device"
+        android:text="@string/programming_assignment_all_files_access_is_require_description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/permission_header" />
 
     <Button
         android:id="@+id/permission_grant_access"
-        android:layout_margin="32dp"
+        android:layout_margin="@dimen/double_margin"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Grant access"/>
+        android:text="@string/programming_assignment_grant_access"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

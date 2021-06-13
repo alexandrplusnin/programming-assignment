@@ -1,4 +1,4 @@
-package com.assignment.programming.data;
+package com.assignment.programming.data.models;
 
 import androidx.core.util.ObjectsCompat;
 
@@ -8,7 +8,7 @@ import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Locale;
 
-public class DetailedFileModel extends FileModel {
+public final class DetailedFileModel extends FileModel {
 
     private static final String[] SIZE_UNITS = new String[]{"B", "kB", "MB", "GB", "TB"};
     private static final String[] IMAGE_EXTENSION = new String[]{"jpeg", "jpg", "png"};
@@ -23,9 +23,12 @@ public class DetailedFileModel extends FileModel {
     }
 
     public String getFormattedLength() {
-        if (length <= 0) return "0";
+        if (length <= 0) {
+            return "0";
+        }
         int digitGroups = (int) (Math.log10(length) / Math.log10(1024));
-        return new DecimalFormat("#,##0.#").format(length / Math.pow(1024, digitGroups)) + " " + SIZE_UNITS[digitGroups];
+        return new DecimalFormat("#,##0.#")
+                .format(length / Math.pow(1024, digitGroups)) + " " + SIZE_UNITS[digitGroups];
     }
 
     public String getFormattedModificationDate() {

@@ -16,13 +16,13 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginStart="@dimen/list_item_margin"
+        android:layout_marginStart="@dimen/half_margin"
         android:orientation="vertical"
         tools:context=".ui.file_item.FileItemFragment">
 
         <TextView
             android:id="@+id/file_item_name_label"
-            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginTop="@dimen/half_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceCaption"
@@ -37,7 +37,7 @@
 
         <TextView
             android:id="@+id/file_item_path_label"
-            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginTop="@dimen/half_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceCaption"
@@ -52,7 +52,7 @@
 
         <TextView
             android:id="@+id/file_item_size_label"
-            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginTop="@dimen/half_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceCaption"
@@ -67,7 +67,7 @@
 
         <TextView
             android:id="@+id/file_item_date_created_label"
-            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginTop="@dimen/half_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceCaption"
@@ -82,7 +82,7 @@
 
         <TextView
             android:id="@+id/file_item_date_modified_label"
-            android:layout_marginTop="@dimen/list_item_margin"
+            android:layout_marginTop="@dimen/half_margin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAppearance="?textAppearanceCaption"

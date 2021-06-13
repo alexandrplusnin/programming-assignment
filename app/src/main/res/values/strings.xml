@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Programming Assignment</string>
+    <string name="programming_assignment_app_name">Programming Assignment</string>
     <string name="programming_assignment_matches_found">Matches found: %d</string>
     <string name="programming_assignment_action_search">Search</string>
     <string name="programming_assignment_sort_by_name">Sort by name</string>
@@ -12,5 +12,8 @@
     <string name="programming_assignment_file_item_date_modified">Modified</string>
     <string name="programming_assignment_channel_name">Notifications</string>
     <string name="programming_assignment_save_to_file">Save to file</string>
-    <string name="programming_assignment_result_file">Result file</string>
+    <string name="programming_assignment_result_file">View result file</string>
+    <string name="programming_assignment_all_files_access_is_required">All files access is required</string>
+    <string name="programming_assignment_all_files_access_is_require_description">Application needs all files access in order to find and display paths/names of all files on the device</string>
+    <string name="programming_assignment_grant_access">Grant access</string>
 </resources>

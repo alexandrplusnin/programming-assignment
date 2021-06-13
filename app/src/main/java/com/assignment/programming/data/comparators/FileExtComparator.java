@@ -1,4 +1,6 @@
-package com.assignment.programming.data;
+package com.assignment.programming.data.comparators;
+
+import com.assignment.programming.data.models.FileModel;
 
 import java.util.Comparator;
 

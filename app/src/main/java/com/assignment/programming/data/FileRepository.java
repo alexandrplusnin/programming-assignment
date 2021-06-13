@@ -9,6 +9,12 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.annotation.WorkerThread;
 
+import com.assignment.programming.data.comparators.FileDateComparator;
+import com.assignment.programming.data.comparators.FileExtComparator;
+import com.assignment.programming.data.comparators.FileNameComparator;
+import com.assignment.programming.data.models.DetailedFileModel;
+import com.assignment.programming.data.models.FileModel;
+
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
@@ -23,7 +29,6 @@ public final class FileRepository {
 
     private static final String TAG = FileRepository.class.getSimpleName();
     private static FileRepository INSTANCE;
-
 
     private final List<FileModel> fileList = new ArrayList<>();
 

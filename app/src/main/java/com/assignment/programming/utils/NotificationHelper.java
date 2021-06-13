@@ -15,13 +15,14 @@ import androidx.core.content.FileProvider;
 import com.assignment.programming.BuildConfig;
 import com.assignment.programming.MainActivity;
 import com.assignment.programming.R;
-import com.assignment.programming.data.FileModel;
+import com.assignment.programming.data.models.FileModel;
 
 import java.io.File;
 
 public final class NotificationHelper {
 
-    private static final int NOTIFICATION_ID = 1;
+    private static final int MATCHES_FOUND_NOTIFICATION_ID = 1;
+    private static final int RESULT_FILE_NOTIFICATION_ID = 2;
     private static final String CHANNEL_ID = "com.assignment.programming.utils.NotificationHelper.CHANNEL_ID";
 
     private NotificationHelper() {
@@ -40,7 +41,7 @@ public final class NotificationHelper {
         notificationBuilder.setSmallIcon(R.drawable.ic_launcher_foreground);
         notificationBuilder.setContentIntent(pendingIntent);
         notificationBuilder.setAutoCancel(true);
-        nm.notify(NOTIFICATION_ID, notificationBuilder.build());
+        nm.notify(MATCHES_FOUND_NOTIFICATION_ID, notificationBuilder.build());
     }
 
     public static void createResultFileNotification(Context context, FileModel fileModel) {
@@ -62,7 +63,7 @@ public final class NotificationHelper {
         notificationBuilder.setSmallIcon(R.drawable.ic_launcher_foreground);
         notificationBuilder.setContentIntent(pendingIntent);
         notificationBuilder.setAutoCancel(true);
-        nm.notify(NOTIFICATION_ID, notificationBuilder.build());
+        nm.notify(RESULT_FILE_NOTIFICATION_ID, notificationBuilder.build());
     }
 
     @RequiresApi(Build.VERSION_CODES.O)

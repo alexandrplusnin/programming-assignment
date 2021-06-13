@@ -4,7 +4,6 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -17,14 +16,13 @@ import com.assignment.programming.databinding.FragmentFileItemBinding;
 
 public class FileItemFragment extends Fragment {
 
-    private FragmentFileItemBinding viewBinding;
     private FileItemViewModel viewModel;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container,
                              Bundle savedInstanceState) {
-        viewBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_file_item, container, false);
+        FragmentFileItemBinding viewBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_file_item, container, false);
         viewBinding.setLifecycleOwner(getViewLifecycleOwner());
         viewBinding.setViewModel(viewModel);
         return viewBinding.getRoot();

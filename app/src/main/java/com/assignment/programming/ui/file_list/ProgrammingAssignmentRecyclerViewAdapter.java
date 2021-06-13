@@ -1,6 +1,5 @@
 package com.assignment.programming.ui.file_list;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Spannable;
 import android.text.SpannableStringBuilder;
@@ -16,17 +15,12 @@ import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.assignment.programming.R;
-import com.assignment.programming.data.FileModel;
+import com.assignment.programming.data.models.FileModel;
 import com.assignment.programming.databinding.ItemListFileBinding;
-import com.assignment.programming.placeholder.PlaceholderContent.PlaceholderItem;
 
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * {@link RecyclerView.Adapter} that can display a {@link PlaceholderItem}.
- * TODO: Replace the implementation with code for your data type.
- */
 public class ProgrammingAssignmentRecyclerViewAdapter extends RecyclerView.Adapter<ProgrammingAssignmentRecyclerViewAdapter.ViewHolder> {
 
     private final List<FileModel> itemList = new ArrayList<>();

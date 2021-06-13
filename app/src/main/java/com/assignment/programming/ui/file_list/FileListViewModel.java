@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
 import com.assignment.programming.base.BaseViewModel;
-import com.assignment.programming.data.FileModel;
+import com.assignment.programming.data.models.FileModel;
 import com.assignment.programming.data.FileRepository;
 import com.assignment.programming.data.SortType;
 

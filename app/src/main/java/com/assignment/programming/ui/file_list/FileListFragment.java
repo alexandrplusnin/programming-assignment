@@ -33,7 +33,7 @@ import com.assignment.programming.databinding.FragmentFileListBinding;
 import com.assignment.programming.utils.NotificationHelper;
 
 /**
- * A fragment representing a list of Items.
+ * A fragment representing a list of FileModels
  */
 public class FileListFragment extends Fragment {
 
